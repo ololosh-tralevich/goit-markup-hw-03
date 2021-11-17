@@ -16,6 +16,23 @@ body {
   font-family: var(--main-font), sans-serif;
 }
 
+ul {
+  list-style: none;
+}
+
+h1 {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 60px;
+  /* or 136% */
+
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  color: var(--white-color);
+}
+
 .a {
   color: var(--black-color);
   text-decoration: none;
@@ -23,10 +40,6 @@ body {
 
 .a:hover {
   color: var(--hover-color);
-}
-
-.ul {
-  list-style: none;
 }
 
 .button {
@@ -142,19 +155,6 @@ body {
 .order-block {
 
   background-color: var(--order-block-color);
-}
-
-.h1 {
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 60px;
-  /* or 136% */
-
-  text-align: center;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-
-  color: var(--white-color);
 }
 
 .order-button {
