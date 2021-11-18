@@ -11,40 +11,45 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./css/modern-normalize.css"/>
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
-  <body>
-    <!-- header content section -->
-    <header>
+  <header class="header">
+    <div class="container flex-container">
       <a class="logo a" href="./index.html">
-        Web<span class="logo-black">Soft</span>
+        Web<span class="logo-black">Studio</span>
       </a>
 
       <nav>
-        <ul>
-          <li class="studio"><a class="a" href="./index.html">Студия</a></li>
-          <li class="portfolio">
-            <a class="a portfolio" href="./portfolio.html">Портфолио</a>
+        <ul class="menu flex-container">
+          <li>
+            <a class="a studio studio" href="./index.html">Студия</a>
           </li>
-          <li class="contact"><a class="a" href="/contact">Контакты</a></li>
+          <li>
+            <a class="a portfolio portfolio-open" href="./portfolio.html">Портфолио</a>
+          </li>
+          <li><a class="a contact" href="/contact">Контакты</a></li>
         </ul>
       </nav>
 
-      <div class="contacts">
-        <a class="a email" href="mailto:info@example.com">
+      <div class="contacts flex-container">
+        <a class="email a header-email" href="mailto:info@example.com">
           info@example.com
         </a>
-        <a class="a tel" href="tel:+380991111111">+38 099 111 11 11</a>
+        <a class="tel a header-tel" href="tel:+380991111111">
+          +38 099 111 11 11
+        </a>
       </div>
-    </header>
+    </div>
+  </header>
 
     <div class="header-border"></div>
 
     <!-- main content section -->
     <main>
-      <section class="menu">
+      <section class="menu container">
         <h2 hidden>Портфолио</h2>
-        <ul class="button-list">
+        <ul class="button-list flex-container">
           <li>
             <button class="portfolio-btn button all" type="button">Все</button>
           </li>
@@ -69,8 +74,8 @@
         </ul>
       </section>
       <!-- img list -->
-      <section class="projets-img">
-        <ul>
+      <section class="projets-img container">
+        <ul class="flex-container-wrap flex-container">
           <li class="projects-img-block">
             <img
               src="./images/portfolio/portfolio(1).jpg"
@@ -160,23 +165,22 @@
 
     <!-- footer content section -->
     <footer class="footer">
-      <a class="a footer-logo" href="./index.html">
-        Web<span class="logo-white">Soft</span>
+      <div class="container flex-container-footer">
+      <a class="footer-logo a" href="./index.html">
+        Web<span class="logo-white">Studio</span>
       </a>
-      <address class="address">
-        <a class="a map" href="https://goo.gl/maps/2pE7odXQLVDn4BUs5">
+      <address class="address flex-container-footer">
+        <a class="map a" href="https://goo.gl/maps/2pE7odXQLVDn4BUs5">
           г. Киев, пр-т Леси Украинки, 26
         </a>
-        <br />
-        <a class="a email" href="mailto:info@example.com">
+        <a class="footer-email a" href="mailto:info@example.com">
           info@example.com
         </a>
-        <br />
-        <a class="a tel" href="tel:+380991111111">
+        <a class="footer-tel a" href="tel:+380991111111">
           +38 099 111 11 11
         </a>
-        <br />
       </address>
+    </div>
     </footer>
   </body>
 </html>

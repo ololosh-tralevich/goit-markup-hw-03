@@ -11,168 +11,187 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./css/modern-normalize.css" />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header>
-      <a
-        class="logo a"
-        href="./index.html"
-      >
-      Web<span class="logo-black">Soft</span>
-      </a>
-
-      <nav>
-        <ul>
-          <li class="studio"><a class="a studio" href="./index.html">Студия</a></li>
-          <li class="portfolio"><a class="a" href="./portfolio.html">Портфолио</a></li>
-          <li class="contact"><a class="a" href="/contact">Контакты</a></li>
-        </ul>
-      </nav>
-
-      <div class="contacts">
-        <a class="email a" href="mailto:info@example.com">
-          info@example.com
+    <header class="header">
+      <div class="container flex-container">
+        <a class="logo a" href="./index.html">
+          Web
+          <span class="logo-black">Studio</span>
         </a>
-        <a class="tel a" href="tel:+380991111111">+38 099 111 11 11</a>
+
+        <nav>
+          <ul class="menu flex-container">
+            <li>
+              <a class="a studio studio-open" href="./index.html">Студия</a>
+            </li>
+            <li>
+              <a class="a portfolio" href="./portfolio.html">Портфолио</a>
+            </li>
+            <li><a class="a contact" href="/contact">Контакты</a></li>
+          </ul>
+        </nav>
+
+        <div class="contacts flex-container">
+          <a class="email a header-email" href="mailto:info@example.com">
+            info@example.com
+          </a>
+          <a class="tel a header-tel" href="tel:+380991111111">
+            +38 099 111 11 11
+          </a>
+        </div>
       </div>
     </header>
 
     <main>
       <section class="order-block">
-        <h1>Эффективные решения для вашего бизнеса</h1>
-        <button class="order-button button" type="button" name="Заказать услугу">
-          <span class="order-button-text">Заказать услугу</span>
-        </button>
+        <div class="container">
+          <h1>Эффективные решения для вашего бизнеса</h1>
+          <button class="order-button" type="button" name="Заказать услугу">
+            <span class="order-button-text">Заказать услугу</span>
+          </button>
+        </div>
       </section>
 
-      <section class="about-us-block">
-        <ul>
-          <li>
-            <h3 class="about-us-caption">Внимание к деталям</h3>
-            <p class="about-us-description">
-              Идейные соображения, а также начало повседневной работы по
-              формированию позиции.
-            </p>
-          </li>
+      <section class="section">
+        <div class="container">
+          <ul class="about-us-block container flex-container">
+            <li class="about-us-li">
+              <h3 class="about-us-caption h3">Внимание к деталям</h3>
+              <p class="about-us-description">
+                Идейные соображения, а также начало повседневной работы по
+                формированию позиции.
+              </p>
+            </li>
 
-          <li>
-            <h3 class="about-us-caption">Пунктуальность</h3>
-            <p class="about-us-description">
-              Задача организации, в особенности же рамки и место обучения кадров
-              влечет за собой.
-            </p>
-          </li>
+            <li class="about-us-li">
+              <h3 class="about-us-caption h3">Пунктуальность</h3>
+              <p class="about-us-description">
+                Задача организации, в особенности же рамки и место обучения
+                кадров влечет за собой.
+              </p>
+            </li>
 
-          <li>
-            <h3 class="about-us-caption">Планирование</h3>
-            <p class="about-us-description">
-              Равным образом консультация с широким активом в значительной
-              степени обуславливает.
-            </p>
-          </li>
+            <li class="about-us-li">
+              <h3 class="about-us-caption h3">Планирование</h3>
+              <p class="about-us-description">
+                Равным образом консультация с широким активом в значительной
+                степени обуславливает.
+              </p>
+            </li>
 
-          <li>
-            <h3 class="about-us-caption">Современные технологии</h3>
-            <p class="about-us-description">
-              Значимость этих проблем настолько очевидна, что реализация
-              плановых заданий.
-            </p>
-          </li>
-        </ul>
+            <li class="about-us-li">
+              <h3 class="about-us-caption h3">Современные технологии</h3>
+              <p class="about-us-description">
+                Значимость этих проблем настолько очевидна, что реализация
+                плановых заданий.
+              </p>
+            </li>
+          </ul>
+        </div>
       </section>
 
-      <section>
-        <h2 class="what-we-do">Чем мы занимаемся</h2>
-        <ul>
-          <li class="what-we-do-first-img">
-            <img
-              src="images/main/whatwedo/whatwedo.jpg"
-              width="370"
-              alt="Чем мы занимаемся"
-            />
-          </li>
-          <li class="what-we-do-second-img">
-            <img
-              src="images/main/whatwedo/whatwedo(1).jpg"
-              width="370"
-              alt="Чем мы занимаемся"
-            />
-          </li>
-          <li class="what-we-do-third-img">
-            <img
-              src="images/main/whatwedo/whatwedo(2).jpg"
-              width="370"
-              alt="Чем мы занимаемся"
-            />
-          </li>
-        </ul>
+      <section class="section what-we-do-sect">
+        <div class="container">
+          <h2 class="what-we-do">Чем мы занимаемся</h2>
+          <ul class="flex-container">
+            <li class="what-we-do-img">
+              <img
+                src="images/main/whatwedo/whatwedo.jpg"
+                width="370"
+                alt="Чем мы занимаемся"
+              />
+            </li>
+            <li class="what-we-do-img">
+              <img
+                src="images/main/whatwedo/whatwedo(1).jpg"
+                width="370"
+                alt="Чем мы занимаемся"
+              />
+            </li>
+            <li class="what-we-do-img">
+              <img
+                src="images/main/whatwedo/whatwedo(2).jpg"
+                width="370"
+                alt="Чем мы занимаемся"
+              />
+            </li>
+          </ul>
+        </div>
       </section>
 
-      <section class="our-team">
-        <h2 class="our-team-caption">Наша команда</h2>
-        <ul>
-          <li class="team-member-block">
-            <img class="first-team-member-photo"
-              src="images/main/ourteam/ourteam.jpg"
-              width="270"
-              alt="Наш Сотрудник"
-            />
-            <h3 class="team-member-name">Игорь Демьяненко</h3>
-            <p class="team-member-profession">Product Designer</p>
-          </li>
+      <section class="our-team section">
+        <div class="container">
+          <h2 class="our-team-caption">Наша команда</h2>
+          <ul class="flex-container">
+            <li class="team-member-block">
+              <img
+                class="first-team-member-photo"
+                src="images/main/ourteam/ourteam.jpg"
+                width="270"
+                alt="Наш Сотрудник"
+              />
+              <h3 class="team-member-name">Игорь Демьяненко</h3>
+              <p class="team-member-profession">Product Designer</p>
+            </li>
 
-          <li class="team-member-block">
-            <img class="second-team-member-photo"
-              src="images/main/ourteam/ourteam(2).jpg"
-              width="270"
-              alt="Наш Сотрудник"
-            />
-            <h3 class="team-member-name">Ольга Репина</h3>
-            <p class="team-member-profession">Frontend Developer</p>
-          </li>
+            <li class="team-member-block">
+              <img
+                class="second-team-member-photo"
+                src="images/main/ourteam/ourteam(2).jpg"
+                width="270"
+                alt="Наш Сотрудник"
+              />
+              <h3 class="team-member-name">Ольга Репина</h3>
+              <p class="team-member-profession">Frontend Developer</p>
+            </li>
 
-          <li class="team-member-block">
-            <img class="third-team-member-photo"
-              src="images/main/ourteam/ourteam(3).jpg"
-              width="270"
-              alt="Наш Сотрудник"
-            />
-            <h3 class="team-member-name">Николай Тарасов</h3>
-            <p class="team-member-profession">Marketing</p>
-          </li>
+            <li class="team-member-block">
+              <img
+                class="third-team-member-photo"
+                src="images/main/ourteam/ourteam(3).jpg"
+                width="270"
+                alt="Наш Сотрудник"
+              />
+              <h3 class="team-member-name">Николай Тарасов</h3>
+              <p class="team-member-profession">Marketing</p>
+            </li>
 
-          <li class="team-member-block">
-            <img class="team-member-photo"
-              src="images/main/ourteam/ourteam(4).jpg"
-              width="270"
-              alt="Наш Сотрудник"
-            />
-            <h3 class="team-member-name">Михаил Ермаков</h3>
-            <p class="team-member-profession">UI Designer</p>
-          </li>
-        </ul>
+            <li class="team-member-block">
+              <img
+                class="team-member-photo"
+                src="images/main/ourteam/ourteam(4).jpg"
+                width="270"
+                alt="Наш Сотрудник"
+              />
+              <h3 class="team-member-name">Михаил Ермаков</h3>
+              <p class="team-member-profession">UI Designer</p>
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
 
     <footer class="footer">
-      <a class="footer-logo a"
-        href="./index.html"
-      >
-        Web<span class="logo-white">Soft</span>
-      </a>
-      <address class="address">
-        <a class="map a" href="https://goo.gl/maps/2pE7odXQLVDn4BUs5">г. Киев, пр-т Леси Украинки, 26</a>
-        <br />
-        <a class="email a" href="mailto:info@example.com">
-          info@example.com
+      <div class="container flex-container-footer">
+        <a class="footer-logo a" href="./index.html">
+          Web
+          <span class="logo-white">Studio</span>
         </a>
-        <br />
-        <a class="tel a" href="tel:+380991111111">
-          +38 099 111 11 11
-        </a>
-        <br />
-      </address>
+        <address class="address flex-container-footer">
+          <a class="map a" href="https://goo.gl/maps/2pE7odXQLVDn4BUs5">
+            г. Киев, пр-т Леси Украинки, 26
+          </a>
+          <a class="footer-email a" href="mailto:info@example.com">
+            info@example.com
+          </a>
+          <a class="footer-tel a" href="tel:+380991111111">
+            +38 099 111 11 11
+          </a>
+        </address>
+      </div>
     </footer>
   </body>
 </html>
