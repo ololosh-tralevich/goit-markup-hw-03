@@ -20,27 +20,34 @@
         <a class="logo a-tag" href="./index.html">
           Web<span class="logo-black">Studio</span>
         </a>
-  
+
         <nav>
           <ul class="menu flex-container">
-            <li>
-              <a class="a-tag studio studio-open" href="./index.html">Студия</a>
+            <li class="studio">
+              <a class="a-tag studio-open" href="./index.html">Студия</a>
             </li>
-            <li>
-              <a class="a-tag portfolio portfolio" href="./portfolio.html">Портфолио</a>
+            <li class="portfolio">
+              <a class="a-tag" href="./portfolio.html">Портфолио</a>
             </li>
-            <li><a class="a-tag contact" href="/contact">Контакты</a></li>
+            <li class="contact">
+              <a class="a-tag" href="/contact">Контакты</a>
+            </li>
           </ul>
         </nav>
-  
-        <div class="contacts flex-container">
-          <a class="email a-tag header-email" href="mailto:info@example.com">
-            info@example.com
-          </a>
-          <a class="tel a-tag header-tel" href="tel:+380991111111">
-            +38 099 111 11 11
-          </a>
-        </div>
+
+        <ul class="contacts flex-container">
+          <li class="header-email">
+            <a class="a-tag email" href="mailto:info@example.com">
+              info@example.com
+            </a>
+          </li>
+
+          <li class="header-tel">
+            <a class="a-tag tel" href="tel:+380991111111">
+              +38 099 111 11 11
+            </a>
+          </li>
+        </ul>
       </div>
     </header>
 
@@ -49,7 +56,7 @@
         <div class="container">
           <h1>Эффективные решения для вашего бизнеса</h1>
           <button class="order-button" type="button" name="Заказать услугу">
-            <span class="order-button-text">Заказать услугу</span>
+            Заказать услугу
           </button>
         </div>
       </section>
@@ -98,6 +105,7 @@
           <ul class="flex-container">
             <li class="what-we-do-img">
               <img
+                class="img-tag"
                 src="images/main/whatwedo/whatwedo.jpg"
                 width="370"
                 alt="Чем мы занимаемся"
@@ -105,6 +113,7 @@
             </li>
             <li class="what-we-do-img">
               <img
+                class="img-tag"
                 src="images/main/whatwedo/whatwedo(1).jpg"
                 width="370"
                 alt="Чем мы занимаемся"
@@ -112,6 +121,7 @@
             </li>
             <li class="what-we-do-img">
               <img
+                class="img-tag"
                 src="images/main/whatwedo/whatwedo(2).jpg"
                 width="370"
                 alt="Чем мы занимаемся"
@@ -127,46 +137,54 @@
           <ul class="flex-container">
             <li class="team-member-block">
               <img
-                class="first-team-member-photo"
+                class="img-tag first-team-member-photo"
                 src="images/main/ourteam/ourteam.jpg"
                 width="270"
                 alt="Наш Сотрудник"
               />
-              <h3 class="team-member-name">Игорь Демьяненко</h3>
-              <p class="team-member-profession">Product Designer</p>
+              <div class="team-member">
+                <h3 class="team-member-name">Игорь Демьяненко</h3>
+                <p class="team-member-profession">Product Designer</p>
+              </div>
             </li>
 
             <li class="team-member-block">
               <img
-                class="second-team-member-photo"
+                class="img-tag second-team-member-photo"
                 src="images/main/ourteam/ourteam(2).jpg"
                 width="270"
                 alt="Наш Сотрудник"
               />
-              <h3 class="team-member-name">Ольга Репина</h3>
-              <p class="team-member-profession">Frontend Developer</p>
+              <div class="team-member">
+                <h3 class="team-member-name">Ольга Репина</h3>
+                <p class="team-member-profession">Frontend Developer</p>
+              </div>
             </li>
 
             <li class="team-member-block">
               <img
-                class="third-team-member-photo"
+                class="img-tag third-team-member-photo"
                 src="images/main/ourteam/ourteam(3).jpg"
                 width="270"
                 alt="Наш Сотрудник"
               />
-              <h3 class="team-member-name">Николай Тарасов</h3>
-              <p class="team-member-profession">Marketing</p>
+              <div class="team-member">
+                <h3 class="team-member-name">Николай Тарасов</h3>
+                <p class="team-member-profession">Marketing</p>
+              </div>
             </li>
 
             <li class="team-member-block">
               <img
-                class="team-member-photo"
+                class="img-tag team-member-photo"
                 src="images/main/ourteam/ourteam(4).jpg"
                 width="270"
                 alt="Наш Сотрудник"
               />
-              <h3 class="team-member-name">Михаил Ермаков</h3>
-              <p class="team-member-profession">UI Designer</p>
+              <div class="team-member">
+                <h3 class="team-member-name">Михаил Ермаков</h3>
+                <p class="team-member-profession">UI Designer</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -175,21 +193,21 @@
 
     <footer class="footer">
       <div class="container flex-container-footer">
-      <a class="footer-logo a-tag" href="./index.html">
-        Web<span class="logo-white">Studio</span>
-      </a>
-      <address class="address flex-container-footer">
-        <a class="map a-tag" href="https://goo.gl/maps/2pE7odXQLVDn4BUs5">
-          г. Киев, пр-т Леси Украинки, 26
+        <a class="footer-logo a-tag" href="./index.html">
+          Web<span class="logo-white">Studio</span>
         </a>
-        <a class="footer-email a-tag" href="mailto:info@example.com">
-          info@example.com
-        </a>
-        <a class="footer-tel a-tag" href="tel:+380991111111">
-          +38 099 111 11 11
-        </a>
-      </address>
-    </div>
+        <address class="address flex-container-footer">
+          <a class="map a-tag" href="https://goo.gl/maps/2pE7odXQLVDn4BUs5">
+            г. Киев, пр-т Леси Украинки, 26
+          </a>
+          <a class="footer-email a-tag" href="mailto:info@example.com">
+            info@example.com
+          </a>
+          <a class="footer-tel a-tag" href="tel:+380991111111">
+            +38 099 111 11 11
+          </a>
+        </address>
+      </div>
     </footer>
   </body>
 </html>

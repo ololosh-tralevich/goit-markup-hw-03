@@ -42,15 +42,19 @@ h1 {
   color: var(--white-color);
 }
 
+h3 {
+  margin: 0;
+}
+
 .container {
   width: 1200px;
   margin: 0 auto;
+  padding: 0 15px;
 }
 
 .flex-container {
   display: flex;
   align-items: center;
-  justify-content: center;
 }
 
 .flex-container-wrap {
@@ -71,11 +75,14 @@ h1 {
   color: var(--hover-color);
 }
 
-.about-us-li:last-child,
-.what-we-do-img:last-child,
-.team-member-block:last-child,
-.button-li:last-child {
-  margin-right: 0;
+.img-tag {
+  display: block;  
+}
+
+
+.button-list {
+  justify-content: center;
+
 }
 
 .button-li {
@@ -115,8 +122,7 @@ h1 {
 /* Header section */
 .header {
   padding: 24px 0;
-  border-bottom: 1px solid;
-  border-color: var(--border-color);
+  border-bottom: 1px solid var(--border-color);
 }
 
 .logo {
@@ -153,14 +159,26 @@ h1 {
 .studio-open, .portfolio-open {
   color: var(--hover-color);
 }
-.contact {
-  margin-right: 330px;
+
+.contacts {
+  margin-left: auto;
+}
+.header-tel,
+.header-email  {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
 }
 
 .header-email {
-  margin-right: 50px;
+    margin-right: 50px;
 }
 
+.tel, .email {
+  color: var(--grey-color);
+}
 
 
 
@@ -214,18 +232,12 @@ h1 {
   margin-top: 30px;
   width: 200px;
   height: 50px;
-  background: var(--hover-color);
+  background-color: var(--hover-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   cursor: pointer;
-}
-
-.order-button-text {
-  /* font-style: var(--main-font); */
   font-weight: bold;
-  font-size: 16px;
   line-height: 1.87;
-  align-items: center;
   letter-spacing: 0.06em;
   color: var(--white-color);
 }
@@ -307,28 +319,23 @@ h1 {
   border-radius: 0px 0px 4px 4px;
 }
 
-.team-member-name {
+.team-member {
+  padding: 30px 0;
   text-align: center;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.18;
-  margin-top: 30px;
-  margin-bottom: 10px;
-  text-align: center;
-  letter-spacing: 0.03em;
   color: var(--black-color);
 }
 
-.team-member-profession {
-  width: 270px;
-  font-weight: normal;
+.team-member-name {
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
-  text-align: center;
   letter-spacing: 0.03em;
+}
+
+.team-member-profession {
   color: var(--grey-color);
-  margin-top: 0;
-  margin-bottom: 30px;
+  margin: 10px 0 0 0;
+  font-weight: normal;
 }
 
 /* footer section */
@@ -383,4 +390,13 @@ h1 {
   line-height: 1.17;
   letter-spacing: 0.03em;
   color: var(--grey-color);
+}
+
+
+.about-us-li:last-child,
+.what-we-do-img:last-child,
+.team-member-block:last-child,
+.button-li:last-child,
+.contact {
+  margin-right: 0;
 }
