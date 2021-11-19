@@ -10,6 +10,8 @@
   --border-color: #ececec;
   --projects-color: #eeeeee;
   --order-block-color: #2f303a;
+  --order-btn-backgrn-clr: #188CE8;
+
   --footer-contacts-color: rgba(255, 255, 255, 0.6);
 }
 
@@ -236,6 +238,9 @@ h3 {
   line-height: 1.87;
   letter-spacing: 0.06em;
   color: var(--white-color);
+}
+.order-button:hover {
+  background-color: var(--order-btn-backgrn-clr);
 }
 
 
